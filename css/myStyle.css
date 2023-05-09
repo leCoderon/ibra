@@ -1,0 +1,50 @@
+.card {
+    flex-direction: row;
+    background-color: #000000bc;
+    color: #fff;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
+}
+
+.card img {
+    max-width: 25%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.7em;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-section {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cta-section {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.cta-section .btn {
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    color: #696969;
+}
+
+@media screen and (max-width:600px) {
+    .card img {
+        max-width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+}
